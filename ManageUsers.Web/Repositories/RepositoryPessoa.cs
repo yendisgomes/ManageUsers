@@ -1,4 +1,4 @@
-﻿using ManageUsers.Web.Models;
+﻿using ManageUsers.Web.ViewModels.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;

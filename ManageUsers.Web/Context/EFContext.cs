@@ -1,4 +1,4 @@
-﻿using ManageUsers.Web.Models;
+﻿using ManageUsers.Web.ViewModels.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -14,7 +14,7 @@ namespace ManageUsers.Models
         {
         }
 
-        public DbSet<Pessoa> Pessoas { get; set; }
+        //public DbSet<Pessoa> Pessoas { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

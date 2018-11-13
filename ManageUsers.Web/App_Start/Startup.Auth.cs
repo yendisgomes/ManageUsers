@@ -5,7 +5,7 @@ using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
-using ManageUsers.Web.Models;
+using ManageUsers.Web.ViewModels.Models;
 
 namespace ManageUsers.Web
 {

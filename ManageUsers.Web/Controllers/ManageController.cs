@@ -6,7 +6,7 @@ using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
-using ManageUsers.Web.Models;
+using ManageUsers.Web.ViewModels;
 
 namespace ManageUsers.Web.Controllers
 {

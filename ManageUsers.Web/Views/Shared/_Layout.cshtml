@@ -26,11 +26,10 @@
                             Segurança <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
-                            <li>@Html.ActionLink("Usuários", "", "")</li>
-                            <li>@Html.ActionLink("Permissões", "", "")</li>
+                            <li>@Html.ActionLink("Users", "Index", "Users")</li>
+                            <li>@Html.ActionLink("Permissions", "", "")</li>
                         </ul>
                     </li>
-                    <li>@Html.ActionLink("Cadastrar Pessoa", "Index", "Pessoas")</li>
                 </ul>
                     @Html.Partial("_LoginPartial")
                 </div>
