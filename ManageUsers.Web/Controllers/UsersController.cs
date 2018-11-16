@@ -1,4 +1,6 @@
-﻿using ManageUsers.Web.ViewModels;
+﻿using ManageUsers.Web.Repositories;
+using ManageUsers.Web.ViewModels;
+using ManageUsers.Web.ViewModels.Models;
 using Microsoft.AspNet.Identity.EntityFramework;
 using System;
 using System.Collections.Generic;
@@ -42,9 +44,24 @@ namespace ManageUsers.Web.Controllers
         }
 
         // GET: Users/Details/5
-        public ActionResult Details(int id)
+        public ActionResult Details(string userId)
         {
-            return View();
+            
+            RepositoryUser repo = new RepositoryUser();
+            IdentityUser model = new IdentityUser();
+            model = repo.GetById(userId);
+
+
+            var viewModel = new UserViewModel()
+            {
+                UserId = model.Id,
+                Username = model.UserName,
+                Email = model.Email,
+                Role = model.Roles.ToString(),
+                AccountStatus = model.EmailConfirmed
+            };
+
+            return View(viewModel);
         }
 
         // GET: Users/Create

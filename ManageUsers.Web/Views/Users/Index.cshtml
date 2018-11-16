@@ -24,7 +24,7 @@
             Profile
         </th>
         <th>
-            Account Status
+            Email Confirmed
         </th>
         <th></th>
     </tr>
@@ -48,7 +48,7 @@
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { userId = item.UserId  }) |
             @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
         </td>
     </tr>
